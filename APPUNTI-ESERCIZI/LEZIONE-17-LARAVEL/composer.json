@@ -1,0 +1,19 @@
+{
+    "name": "gabriele/app",
+    "description": "project demo",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Gabriele\\App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gabriele Speciale",
+            "email": "gabspec@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}

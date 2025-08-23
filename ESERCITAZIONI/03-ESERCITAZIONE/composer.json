@@ -1,0 +1,17 @@
+{
+    "name": "specia/esercitazione03",
+    "description": "demo composer",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gabriele Speciale"
+        }
+    ],
+    "require": {}
+}

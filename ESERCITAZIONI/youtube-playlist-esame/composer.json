@@ -1,0 +1,22 @@
+{
+  "name": "app/youtube-playlist",
+  "version": "1.0.0",
+  "description": "youtube playlist",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/",
+      "Api\\": "api/",
+      "Config\\": "config/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Speciale Gabriele",
+      "email": "gabriele.speciale@edu.itspiemonte.it"
+    }
+  ],
+  "require": {
+    "nikic/fast-route": "^1.3"
+  }
+}

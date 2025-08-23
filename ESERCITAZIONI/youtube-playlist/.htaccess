@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# usato per non riscrivere se è un file o directory esistente
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# riscrive playlist -> api/playlist.php
+RewriteRule ^api/playlist$ api/playlist.php [L,QSA]
+
+# riscrive playlist/ID -> api/playlist.php/ID
+RewriteRule ^api/playlist/([0-9]+)$ api/playlist.php/$1 [L,QSA]

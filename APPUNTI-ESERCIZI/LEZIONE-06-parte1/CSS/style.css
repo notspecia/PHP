@@ -1,0 +1,16 @@
+h2{
+    color: red;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a.active{
+    background-color: green;
+}
+
+nav a.inactive{
+    background-color: gray;
+}

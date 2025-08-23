@@ -1,0 +1,17 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # imposta il file index predefinito all'interno della cartella 'public'
+    DirectoryIndex public/index.php
+
+    # impedisce l'accesso a file nascosti (quelli che iniziano con un punto, come .htaccess)
+    <FilesMatch "^\..*">
+        Require all denied
+    </FilesMatch>
+
+    # indirizza tutte le richieste fatte verso il file 'index.php' nella cartella 'public'
+    RewriteRule . public/$1 [L,QSA]
+
+    Options -Indexes
+
+</IfModule>
