@@ -1,0 +1,17 @@
+{
+    "bianco": "#FFFFFF",
+    "nero": "#000000",
+    "rosso": "#FF0000",
+    "verde": "#00FF00",
+    "blu": "#0000FF",
+    "giallo": "#FFFF00",
+    "ciano": "#00FFFF",
+    "magenta": "#FF00FF",
+    "grigio": "#808080",
+    "arancione": "#FFA500",
+    "viola": "#800080",
+    "marrone": "#A52A2A",
+    "rosa": "#FFC0CB",
+    "lime": "#BFFF00",
+    "turchese": "#40E0D0"
+}
