@@ -26,15 +26,18 @@ class Persona {
         return "Ciao io sono $this->nome $this->cognome e ho $this->eta anni scrivimi pure sulla mia email: $this->email";
     }
 
-    // getters e setter x modifica e accesso a proprietà private / protected
+    // getters e setter x modifica e accesso a proprietà private / protected (anch'essi possono essere PUBLIC / PROTECTED / PRIVATE)
     public function getEta() { 
         return $this->eta;
     }
 
-    protected function getEmail() { 
+    public function getEmail() { 
         return $this->email;
     }
 
+    public function setEmail($newEmail){
+        $this->email = $newEmail;
+    }
 }
 
 
@@ -54,7 +57,12 @@ class Persona {
 // -------------------------------------------------------------
 ?>
 
+
+<br><br>
+<hr>
+<br><br>
 <h1>Persona classe</h1>
+
 
 <?php
 // -------------------------------------------------------------
@@ -107,7 +115,12 @@ $studenteBullo = new Studente("Gennaro", "Bluue", 10, "genny@bully.com", "Xbox 3
 var_dump($studenteBullo); 
 
 // testing proprietà + metodi della classe
-echo "<br><br> il mio sport ed email è fuori dalla classe: $studenteBullo->sport e se hai problemi scrivimi sulla mia console " . $studenteBullo->console .  "<br><br>";
+echo "<br><br> il mio sport ed email è fuori dalla classe: faccio" . $studenteBullo->getSport() . " e se hai problemi scrivimi sulla mia console " . $studenteBullo->console .  "<br><br>";
 echo "fuori dalla classe evoco metodo() " . $studenteBullo->salutoBrody()  .  "<br><br>";
+
+// script che modifica la PRIVATE EMAIL dopo aver fato echo di tutto tramite setter()
+$studenteBullo->setEmail("gigggigigig@yhaooo.it");
+echo "ho crakkato l'email ed ora è" . $studenteBullo->getEmail();
 // -------------------------------------------------------------
 ?>
+<br><br>

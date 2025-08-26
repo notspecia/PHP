@@ -25,7 +25,7 @@ Class Studente extends Persona {
 
     // proprietà
     public $console;
-    public $sport;
+    protected $sport;
 
     // costruttore + costruttore del parent sopra Persona
     public function __construct($nome, $cognome, $eta, $email, $console, $sport) {
@@ -37,5 +37,10 @@ Class Studente extends Persona {
     // metodi
     public function salutoBrody () { 
         return "aoo bella rega sono $this->nome e faccio $this->sport e gioco alla $this->console, in totale ho $this->eta anni";
+    }
+
+    // getters e setters (utilizzabili solo dalle istanze di Studente)
+    public function getSport() {
+        return $this->sport;
     }
 }
