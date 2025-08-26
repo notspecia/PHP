@@ -48,4 +48,24 @@ continuando l'esempio della creazione di persona1:
 
 X I METODI --> andiamo a prendere i metodi dalla persona 
 ma andiamo a sovrascriverle con lo stesso metodo della sottoclasse!
- */
+*/
+
+
+
+/*
+!REGOLE PER USARE LE CLASSI {}
+- per creare una classe si usa la parola chiave class
+- per creare un oggetto/istanza si usa la parola chiave new
+- per accedere e assegnare le proprietà di un oggetto si usa la freccia ->
+- utilizzare i costruttori per inizializzare le proprietà di un oggetto al momento della creazione, evitando di doverle assegnare manualmente una per una
+- il $this si riferisce all'oggetto CORRENTE, e serve per accedere alle proprietà e ai metodi dell'oggetto all'interno della classe
+- differenze tra PUBLIC / PROTECTED / PRIVATE
+    TIPO 	        DOVE SI USA	                        ACCESSO
+    *public	        dentro e fuori dalla classe	        libero
+    ?protected	    dentro la classe e le sottoclassi	limitato
+    !private	    solo dentro la classe	            privato
+- uso dei getter e setter:
+    - Permettono di proteggere proprietà private/protected
+    - Consentono di aggiungere logica prima di leggere o scrivere valori (es. validazioni)
+    - Mantengono l’incapsulamento, principio fondamentale dell’OOP
+*/ 

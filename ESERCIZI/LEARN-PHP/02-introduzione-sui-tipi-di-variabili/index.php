@@ -28,7 +28,7 @@
 
     <!-- andiamo ad includere all'index.php dei file esterni .php -->
     <?php
-    require_once "./strings.php";
+    require_once "./arrays.php";
     ?>
 
 </body>
